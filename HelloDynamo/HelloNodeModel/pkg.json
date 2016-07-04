@@ -1,0 +1,20 @@
+{
+   "license":"MIT",
+   "file_hash":null,
+   "name":"HelloNodeModel",
+   "version":"1.0.0",
+   "description":"Sample node",
+   "group":"HelloDynamo",
+   "keywords":[ "hello","dynamo"],
+   "dependencies":[],
+   "contents":"Sample node",
+   "engine_version":"1.0.0",
+   "engine":"dynamo",
+   "engine_metadata":"",
+   "site_url":"",
+   "repository_url":"",
+   "contains_binaries":true,
+   "node_libraries":[
+      "HelloNodeModel, Version=1.0.0, Culture=neutral, PublicKeyToken=null"
+   ]
+}
