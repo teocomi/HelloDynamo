@@ -1,12 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using Dynamo.Graph.Nodes;
+using HelloDynamo.Hello;
 using ProtoCore.AST.AssociativeAST;
-
-using Hello;
 
 namespace HelloDynamo.HelloNodeModel
 {
+  /// <summary>
+  /// Sample NodeModel 
+  /// In order to execute AstFactory.BuildFunctionCall 
+  /// the methods have to be in a separate assembly and be loaded by Dynamo separately
+  /// File pkg.json defines which dll are loaded
+  /// </summary>
   [NodeName("HelloNodeModel")]
   [NodeDescription("Example Node Model, multiplies AxB")]
   [NodeCategory("HelloDynamo")]
