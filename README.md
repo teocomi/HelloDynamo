@@ -6,7 +6,8 @@ Contains:
 
 ![image](https://cloud.githubusercontent.com/assets/2679513/16582748/be9e36e4-42a8-11e6-8c0a-429c0caf0ef1.png)
 
-
+### Documentation
+More info on custom nodes on the [Dynamo Wiki](https://github.com/DynamoDS/Dynamo/wiki/How-To-Create-Your-Own-Nodes) or [Dynamo Premier](http://dynamoprimer.com/).
 
 ### Debug
 
