@@ -11,8 +11,15 @@ More info on custom nodes on the [Dynamo Wiki](https://github.com/DynamoDS/Dynam
 
 ### Debug
 
-To debug change your StartAction to: ```C:\Program Files\Dynamo\Dynamo Revit\1.0\DynamoSandbox.exe```.
-The .csproj file automatically copies the dlls to ```%appdata%\Dynamo\Dynamo Core\1.0\packages\HelloNodeModel\``` upon build, change accordingly if using another version of Dynamo.
+To debug change your StartAction to: `C:\Program Files\Dynamo\Dynamo Revit\1.0\DynamoSandbox.exe`.
+The project has post build actions set to:
+
+```
+xcopy /Y "$(TargetDir)*.*" "$(AppData)\Dynamo\Dynamo Core\1.3\packages\$(ProjectName)\bin\"
+xcopy /Y "$(ProjectDir)pkg.json" "$(AppData)\Dynamo\Dynamo Core\1.3\packages\$(ProjectName)"
+```
+
+Change accordingly if using another version of Dynamo.
 
 
 ![image](http://i.imgur.com/ZKfnm2e.png)
