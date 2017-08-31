@@ -138,12 +138,8 @@
     </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="AfterBuild">
-    <ItemGroup>
-      <SourceDlls Include="$(TargetDir)*.dll" />
-      <SourcePkg Include="pkg.json" />
-    </ItemGroup>
-    <Copy SourceFiles="@(SourceDlls)" DestinationFolder="$(AppData)\Dynamo\Dynamo Core\1.0\packages\$(ProjectName)\bin\%(RecursiveDir)" />
-    <Copy SourceFiles="@(SourcePkg)" DestinationFolder="$(AppData)\Dynamo\Dynamo Core\1.0\packages\$(ProjectName)\" />
-  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /Y "$(TargetDir)*.*" "$(AppData)\Dynamo\Dynamo Core\1.3\packages\$(ProjectName)\bin\"
+xcopy /Y "$(ProjectDir)pkg.json" "$(AppData)\Dynamo\Dynamo Core\1.3\packages\$(ProjectName)"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
