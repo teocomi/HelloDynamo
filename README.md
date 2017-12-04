@@ -1,4 +1,14 @@
-# HelloDynamo
+## A more comprehensive guide to custom nodes in C# can be found at [github.com/teocomi/dug-dynamo-unchained](https://github.com/teocomi/dug-dynamo-unchained)
+
+
+
+
+
+
+
+
+
+### HelloDynamo
 Example of custom Dynamo nodes.
 Contains:
 - custom NodeModel node
